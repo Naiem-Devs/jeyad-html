@@ -1,0 +1,208 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .ChampShip__wrp {
+        padding: 60px 40px 40px;
+    }
+    
+    .chp__content {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .timer__blk ul li span {
+        font-size: 40px;
+    }
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .ChampShip__wrp {
+        padding: 60px 40px 40px;
+        margin-top: -100px;
+    }
+    
+    .chp__content {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .timer__blk ul li span {
+        font-size: 40px;
+    }
+
+    section.bennar-area img{height: 500px;object-fit: cover;}
+    .menu-area nav ul li a {
+        font-size: 14px;
+    }
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    :root{
+        scroll-behavior: smooth;
+      
+        --f18 : 16px;
+        --f20 : 16px;
+        --f22 : 18px;
+        --f24 : 20px;
+        --f28 : 24px;
+        --f30 : 24px;
+        --f32 : 24px;
+        --f36 : 30px;
+        --f40 : 32px;
+        --f48 : 32px;
+        --f65 : 40px;
+    }
+    .thm_btn{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .logo-area {
+        text-align: center;
+        max-width: 70px;
+        margin: auto;
+    }
+    .ChampShip__wrp {
+        padding: 60px 40px 40px;
+        margin-top: -100px;
+    }
+    
+    .chp__content {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .timer__blk ul li span {
+        font-size: 40px;
+    }
+
+    section.bennar-area img{height: 390px;object-fit: cover;}
+    .chp__user {
+        flex-direction: column;
+    }
+    .wether__slider {
+        margin-top: 50px;
+    }
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    :root{
+        scroll-behavior: smooth;
+      
+        --f18 : 16px;
+        --f20 : 16px;
+        --f22 : 18px;
+        --f24 : 20px;
+        --f28 : 24px;
+        --f30 : 24px;
+        --f32 : 24px;
+        --f36 : 30px;
+        --f40 : 32px;
+        --f48 : 32px;
+        --f65 : 40px;
+    }
+    .header__right .lng a span {
+        display: none;
+    }
+    
+    .header__right .lng {
+        padding: 0;
+        background: no-repeat;
+    }
+
+a.notifi-icon {
+    display: flex;
+}
+    
+    .header__right {
+        gap: 0;
+    }
+    
+    .header__right ul {
+        gap: 2px;
+        display: none;
+    }
+    .thm_btn{
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    .logo-area {
+        text-align: center;
+        margin: auto;
+        max-width: 50px;
+    }
+    .ChampShip__wrp {
+        padding: 0 0;
+        margin-top: 0;
+        padding-top: 59px;
+        box-shadow: none;
+        border-radius: 0;
+        background: no-repeat;
+    }
+    
+    .chp__content {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    .timer__blk ul li span {
+        font-size: 15px;
+        min-width: 24px;
+    }
+
+.timer__blk ul {
+    gap: 28px;
+    padding: 20px 25px 25px;
+}
+
+.timer__blk {
+    margin-top: -110px;
+}
+
+.timer__blk ul li {
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+    section.bennar-area img{height: 260px;object-fit: cover;}
+    .chp__user {
+        flex-direction: column;
+    }
+    .wether__slider {
+        margin-top: 50px;
+    }
+    .ChampShip__title h3 {
+        font-size: 18px;
+    }
+    
+    .chp__user p img {
+        max-width: 40px;
+    }
+    
+    .chp__user p {
+        font-size: 14px;
+    }
+    
+    .dcs__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    ul.dcs__info li {
+        margin-right: 0;
+    }
+    
+    .wether__item p {
+        font-size: 12px;
+    }
+    
+    .ChampShip-area {
+        padding-bottom: 50px;
+    }
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
