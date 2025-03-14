@@ -1,0 +1,791 @@
+<!doctype html>
+<html dir="rtl" class="no-js" lang="" >
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Client Dashboard Tab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <link rel="stylesheet" href="assets/css/nice-select2.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+       
+    <!-- header-area START -->
+    <div class="header-area position-sticky top-0">
+        <div class="container lg">
+            <div class="row align-items-center">
+                <div class="col-4 col-md-4 d-block d-lg-none text-center">
+                    <div class="bar__icon">
+                        <a class="humbergar siteBar-btn" href="#">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-4 col-md-4 ">
+                    <div class="logo-area">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block text-right">
+                    <div class="menu-area">
+                        <nav>
+                            <ul id="nav">
+                                <li><a href="#">المجلة</a></li>
+                                <li><a href="#">مجتمع أهل الخيل </a></li> 
+                                <li><a href="#">المزادات</a></li> 
+                                <li><a href="#" class="active">البطولات</a></li>  
+                                <li><a href="#">الخيول</a></li>  
+                                <li><a href="#">التسوق</a></li>  
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-4 col-md-4">
+                    <div class="header__right">
+                        <div class="lng">
+                            <a href="#"><i><img src="assets/img/lng-icon.png" alt=""></i> <span>AR</span></a>
+                        </div>
+                        <a href="" class="notifi-icon"><img src="assets/img/all-icons/notification.png" alt=""> <span>2</span></a>
+                        <ul>
+                            <li><a href=""><img src="assets/img/all-icons/cart-icon.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/img/all-icons/heart-icon.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/img/all-icons/user-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- mobile-menu START -->
+        <div class="mobile-menu">
+            <a href="#" class="bars siteBar-btn"><svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+            </svg></a> 
+            <nav> 
+                <ul id="nav">
+                    <li><a href="#">المجلة</a></li>
+                    <li><a href="#">مجتمع أهل الخيل </a></li> 
+                    <li><a href="#">المزادات</a></li> 
+                    <li><a href="#">البطولات</a></li>  
+                    <li><a href="#">الخيول</a></li>  
+                    <li><a href="#">التسوق</a></li>  
+                </ul>
+            </nav> 
+        </div> 
+    <!-- header-area END -->
+
+
+    <main>
+
+
+        <!---------ClientTab Section START ---------->
+        <section class="ClientTab-area ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="ClientTab__nav">
+                            <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one" type="button" role="tab" aria-controls="v-pills-one" aria-selected="true"><i><img src="assets/img/all-icons/tab-icon-1.png" alt=""></i> الملف الشخصي</button>
+                                <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two" type="button" role="tab" aria-controls="v-pills-two" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-2.png" alt=""></i> محادثاتي</button>
+                                <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three" type="button" role="tab" aria-controls="v-pills-three" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-3.png" alt=""></i> متابعيني</button>
+                                <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four" type="button" role="tab" aria-controls="v-pills-four" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-4.png" alt=""></i> خيولي</button>
+                                <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five" type="button" role="tab" aria-controls="v-pills-five" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-5.png" alt=""></i> البطولات</button>
+                                <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six" type="button" role="tab" aria-controls="v-pills-six" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-6.png" alt=""></i> المزادات</button>
+                                <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven" type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-7.png" alt=""></i> سجل الفائزين</button>
+                                <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight" type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-8.png" alt=""></i> المحفظة</button>
+                                <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine" type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-9.png" alt=""></i> التقارير</button>
+                                <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten" type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-10.png" alt=""></i> التنبيهات</button>
+                                <button class="nav-link" id="v-pills-eleven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eleven" type="button" role="tab" aria-controls="v-pills-eleven" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-11.png" alt=""></i> إيداع</button>
+                                <button class="nav-link" id="v-pills-twoelb-tab" data-bs-toggle="pill" data-bs-target="#v-pills-twoelb" type="button" role="tab" aria-controls="v-pills-twoelb" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-11.png" alt=""></i> تذكرة الدعم</button>
+                                <button class="nav-link" id="v-pills-therty-tab" data-bs-toggle="pill" data-bs-target="#v-pills-therty" type="button" role="tab" aria-controls="v-pills-therty" aria-selected="false"><i><img src="assets/img/all-icons/tab-icon-13.png" alt=""></i> السياسات</button>
+                            </div>
+                            <a href="" class="logout__btn"><i><img src="assets/img/all-icons/logout.png" alt=""></i> تسجيل الخروج  </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="ClientTab__content">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
+                                    <div class="Profile__tab">
+                                        <div class="user__profile">
+                                            <h5>الملف الشخصي</h5>
+                                            <i><img src="assets/img/user-img.png" alt=""></i>
+                                            <h6>مصطفي سامي Mostafa95@ <img src="assets/img/all-icons/checkmark.png" alt=""></h6>
+                                            <p>انا مصطفي مصمم تجربة المستخدم و واجهة المستخدم</p>
+                                        </div>
+                                        <div class="user__info">
+                                            <ul>
+                                                <li><i><img src="assets/img/all-icons/tab-icon-3.png" alt=""></i> <span>15 أتابع</span></li>
+                                                <li><i><img src="assets/img/all-icons/tab-icon-1.png" alt=""></i> <span>210 متابع</span></li>
+                                            </ul>
+                                            <a href="">تعديل الملف الشخصي <img src="assets/img/all-icons/edit-2.png" alt=""></a>
+                                        </div>
+                                        <hr>
+                                        <div class="post__nav">
+                                            <ul>
+                                                <li><a href="" class="active">المنشورات</a></li>
+                                                <li><a href="">المحفوظات</a></li>
+                                                <li><a href="">الإعجابات</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="post__blk">
+                                            <div class="post__user">
+                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                <h6>احمد خالد<span>@Ahmed98 <img src="assets/img/all-icons/checkmark.png" alt=""><small>10 د</small></span></h6>
+                                                <button type="button"><img src="assets/img/all-icons/three-dot.png" alt=""></button>
+                                            </div>
+                                            <div class="post__img">
+                                                <p>ما في أجمل من خيل عربي أصيل، سرعته، تحمله، وشخصيته اللي ما تتكرر! يكفي إنه كان رفيق الملوك والمحاربين عبر التاريخ. ❤️🔥 عرض المزيد</p>
+                                                <i><img src="assets/img/signIn__img.png" alt=""></i>
+                                                <div class="post__opt">
+                                                    <a href=""> <i><img src="assets/img/all-icons/like.png" alt=""></i> <span>3,3k</span></a>
+                                                    <a href=""> <i><img src="assets/img/all-icons/messages-3.png" alt=""></i> <span>37</span></a>
+                                                    <a href=""> <i><img src="assets/img/all-icons/share-icon.png" alt=""></i> <span>270</span></a>
+                                                    <a href=""> <i><img src="assets/img/all-icons/stash_save.png" alt=""></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post__blk">
+                                            <div class="post__user">
+                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                <h6>احمد خالد<span>@Ahmed98 <img src="assets/img/all-icons/checkmark.png" alt=""><small>10 د</small></span></h6>
+                                                <button type="button"><img src="assets/img/all-icons/three-dot.png" alt=""></button>
+                                            </div>
+                                            <div class="post__img">
+                                                <p>ما في أجمل من خيل عربي أصيل، سرعته، تحمله، وشخصيته اللي ما تتكرر! يكفي إنه كان رفيق الملوك والمحاربين عبر التاريخ. ❤️🔥 عرض المزيد</p>
+                                                <i><img src="assets/img/signIn__img.png" alt=""></i>
+                                                <div class="post__opt">
+                                                    <a href=""> <i><img src="assets/img/all-icons/like.png" alt=""></i> <span>3,3k</span></a>
+                                                    <a href=""> <i><img src="assets/img/all-icons/messages-3.png" alt=""></i> <span>37</span></a>
+                                                    <a href=""> <i><img src="assets/img/all-icons/share-icon.png" alt=""></i> <span>270</span></a>
+                                                    <a href=""> <i><img src="assets/img/all-icons/stash_save.png" alt=""></i> </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add__post">
+                                            <img src="assets/img/all-icons/add-icon.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
+                                    <div class="">
+                                        <i><img src="assets/img/chat-box.png" alt=""></i>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">
+                                    <div class="followers__tab">
+                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link active" id="pills-follw-tab" data-bs-toggle="pill" data-bs-target="#pills-follw" type="button" role="tab" aria-controls="pills-follw" aria-selected="true">متابعيني</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="pills-followe-tab" data-bs-toggle="pill" data-bs-target="#pills-followe" type="button" role="tab" aria-controls="pills-followe" aria-selected="false">أتابع</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-follw" role="tabpanel" aria-labelledby="pills-follw-tab">
+                                                <div class="followers__content">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-followe" role="tabpanel" aria-labelledby="pills-followe-tab">
+                                                <div class="followers__content">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="user__name">
+                                                                <i><img src="assets/img/user-img.png" alt=""></i>
+                                                                <span>Mostafa samy</span>
+                                                            </div>
+                                                            <a href="" class="">يتابعك</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
+                                    <div class="horses__tab">
+                                        <h5 class="mb-4">خيولي</h5>
+                                        <div class="table__blk mb-5">
+                                            <div class="table-wrp border-0">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </th>
+                                                            <th scope="col">ID</th>
+                                                            <th>إسم الحصان</th>
+                                                            <th>رقم الحصان</th>
+                                                            <th>نوع الحصان</th>
+                                                            <th>تاريخ الميلاد</th>
+                                                            <th>والد الفرس</th>
+                                                            <th>المربط</th>
+                                                            <th>المربي</th>
+                                                            <th>المالك</th>
+                                                            <th>تعديلات</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </td>
+                                                            <td>#1</td>
+                                                            <td>حصان سرجان</td>
+                                                            <td>212122</td>
+                                                            <td>ذكر</td>
+                                                            <td>2024-01-18</td>
+                                                            <td>زين</td>
+                                                            <td>القصير</td>
+                                                            <td>القيصر</td>
+                                                            <td>سعيد</td>
+                                                            <td>
+                                                                <div class="action__btn">
+                                                                    <a href="" class="ylw-btn"><img src="assets/img/all-icons/eye.png" alt=""></a>
+                                                                    <a href="" class="pink-btn"><img src="assets/img/all-icons/edit-01.png" alt=""></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <a href="" class="thm_btn">إضافة خيل جديد</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
+                                    <div class="horses__tab">
+                                        <h5 class="mb-4">بطولاتي</h5>
+                                        <div class="table__blk mb-5">
+                                            <div class="table-wrp border-0">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </th>
+                                                            <th scope="col">ID</th>
+                                                            <th>إسم الحصان</th>
+                                                            <th>رقم الحصان</th>
+                                                            <th>نوع الحصان</th>
+                                                            <th>تاريخ الميلاد</th>
+                                                            <th>والد الفرس</th>
+                                                            <th>المربط</th>
+                                                            <th>المربي</th>
+                                                            <th>المالك</th>
+                                                            <th>تعديلات</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </td>
+                                                            <td>#1</td>
+                                                            <td>حصان سرجان</td>
+                                                            <td>212122</td>
+                                                            <td>ذكر</td>
+                                                            <td>2024-01-18</td>
+                                                            <td>زين</td>
+                                                            <td>القصير</td>
+                                                            <td>القيصر</td>
+                                                            <td>سعيد</td>
+                                                            <td>
+                                                                <div class="action__btn">
+                                                                    <a href="" class="ylw-btn"><img src="assets/img/all-icons/eye.png" alt=""></a>
+                                                                    <a href="" class="pink-btn"><img src="assets/img/all-icons/edit-01.png" alt=""></a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <a href="" class="thm_btn">إضافة خيل جديد</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
+                                    <div class="horses__tab">
+                                        <h5 class="mb-4">المزادات</h5>
+                                        <div class="table__blk mb-5">
+                                            <div class="table-wrp border-0">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </th>
+                                                            <th scope="col">ID</th>
+                                                            <th>إسم الحصان</th>
+                                                            <th>رقم الحصان</th>
+                                                            <th>نوع الحصان</th>
+                                                            <th>تاريخ الميلاد</th>
+                                                            <th>والد الفرس</th>
+                                                            <th>المربط</th>
+                                                            <th>المربي</th>
+                                                            <th>المالك</th>
+                                                            <th>تعديلات</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </td>
+                                                            <td>#1</td>
+                                                            <td>حصان سرجان</td>
+                                                            <td>212122</td>
+                                                            <td>ذكر</td>
+                                                            <td>2024-01-18</td>
+                                                            <td>زين</td>
+                                                            <td>القصير</td>
+                                                            <td>القيصر</td>
+                                                            <td>28-01-2025</td>
+                                                            <td>
+                                                                <a href="" class="text-danger">إنتهى</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </td>
+                                                            <td>#1</td>
+                                                            <td>حصان سرجان</td>
+                                                            <td>212122</td>
+                                                            <td>ذكر</td>
+                                                            <td>2024-01-18</td>
+                                                            <td>زين</td>
+                                                            <td>القصير</td>
+                                                            <td>القيصر</td>
+                                                            <td>28-01-2025</td>
+                                                            <td>
+                                                                <a href="" class="text-danger">إنتهى</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </td>
+                                                            <td>#1</td>
+                                                            <td>حصان سرجان</td>
+                                                            <td>212122</td>
+                                                            <td>ذكر</td>
+                                                            <td>2024-01-18</td>
+                                                            <td>زين</td>
+                                                            <td>القصير</td>
+                                                            <td>القيصر</td>
+                                                            <td>28-01-2025</td>
+                                                            <td>
+                                                                <a href="" class="text-danger">إنتهى</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
+                                    <div class="horses__tab">
+                                        <h5 class="mb-4">سجل الفائزين</h5>
+                                        <div class="table__blk mb-5">
+                                            <div class="table-wrp border-0">
+                                                <table class="table table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </th>
+                                                            <th>id</th>
+                                                            <th>المعرف</th>
+                                                            <th>المستخدم</th>
+                                                            <th>المزاد</th>
+                                                            <th>تاريخ الفوز</th>
+                                                            <th>السعر</th>
+                                                            <th>حالة التسليم</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td scope="col">
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </td>
+                                                            <td>01</td>
+                                                            <td>حسن</td>
+                                                            <td>Hacen Boudebbane</td>
+                                                            <td>Queen Horse 89</td>
+                                                            <td>28-01-2025</td>
+                                                            <td class="text-color">8000 SAR</td>
+                                                            <td class="text-warning">في الإنتظار</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td scope="col">
+                                                                <div class=" form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                                </div>
+                                                            </>
+                                                            <td>01</td>
+                                                            <td>حسن</td>
+                                                            <td>Hacen Boudebbane</td>
+                                                            <td>Queen Horse 89</td>
+                                                            <td>28-01-2025</td>
+                                                            <td class="text-color">8000 SAR</td>
+                                                            <td class="text-success">في الإنتظار</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">...</div>
+                                <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
+                                    <div class="Report__tab">
+                                        <h5>التقارير</h5>
+                                        <ul>
+                                            <li>
+                                                <span>أخر إيداع</span>
+                                                <h4><small>SR</small> 100.000</h4>
+                                            </li>
+                                            <li>
+                                                <span>المزادات المشارك فيها</span>
+                                                <h4> 44 <small>مزاد</small></h4>
+                                            </li>
+                                            <li>
+                                                <span>الخيول التي تم شراؤها</span>
+                                                <h4> 33 <small>خيل</small></h4>
+                                            </li>
+                                            <li>
+                                                <span>المزادات الفائزة</span>
+                                                <h4> 18 <small>مزاد</small></h4>
+                                            </li>
+                                            <li>
+                                                <span>البطولات المشارك فيها</span>
+                                                <h4> 20 <small>بطولة</small></h4>
+                                            </li>
+                                            <li>
+                                                <span>عدد الخيول الخاصة</span>
+                                                <h4> 60 <small>حصان</small></h4>
+                                            </li>
+                                            <li>
+                                                <span>عدد المنشورات</span>
+                                                <h4> 15 <small>منشور</small></h4>
+                                            </li>
+                                            <li>
+                                                <span>عدد المتابعين</span>
+                                                <h4> 200 <small>متابع</small></h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
+                                    <div class="Alerts__tab">
+                                        <h5>التنبيهات</h5>
+                                        <div class="flex">
+                                            <a href="">اشعارات جديدة</a>
+                                            <span>اليوم</span>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <i><img src="assets/img/all-icons/notification-icon.png" alt=""></i>
+                                                <p>
+                                                    🏆 انتهى السباق! تعرف على الفائز في سباق [اسم السباق]
+                                                    <span>منذ 1س</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i><img src="assets/img/all-icons/notification-icon.png" alt=""></i>
+                                                <p>
+                                                    ⏳ انتهى السباق! تعرف على الفائز في سباق [اسم السباق]
+                                                    <span>منذ 1س</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i><img src="assets/img/all-icons/notification-icon.png" alt=""></i>
+                                                <p>
+                                                    👍 انتهى السباق! تعرف على الفائز في سباق [اسم السباق]
+                                                    <span>منذ 1س</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i><img src="assets/img/all-icons/notification-icon.png" alt=""></i>
+                                                <p>
+                                                    🐎 انتهى السباق! تعرف على الفائز في سباق [اسم السباق]
+                                                    <span>منذ 1س</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i><img src="assets/img/all-icons/notification-icon.png" alt=""></i>
+                                                <p>
+                                                    🎟 انتهى السباق! تعرف على الفائز في سباق [اسم السباق]
+                                                    <span>منذ 1س</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p>هذا الأسبوع</p>
+                                        <ul>
+                                            <li>
+                                                <i><img src="assets/img/all-icons/notification-icon.png" alt=""></i>
+                                                <p>
+                                                    🏆 انتهى السباق! تعرف على الفائز في سباق [اسم السباق]
+                                                    <span>منذ 1س</span>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i><img src="assets/img/all-icons/notification-icon.png" alt=""></i>
+                                                <p>
+                                                    ⏳ انتهى السباق! تعرف على الفائز في سباق [اسم السباق]
+                                                    <span>منذ 1س</span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-eleven" role="tabpanel" aria-labelledby="v-pills-eleven-tab">
+                                    <div class="Deposit__tab">
+                                        <h5 class="mb-4 mb-lg-5">إيداع</h5>
+                                        <div class="balance__box">
+                                            <h5>رصيدي</h5>
+                                            <h1>100.000<span>SAR</span> </h1>
+                                        </div>
+                                        <h5>أخر التحويلات</h5>
+                                        <ul>
+                                            <li>
+                                                <p>تم إيداع <span>SAR 50.000+ </span> </p>
+                                                <p>28-01-2025</p>
+                                            </li>
+                                            <li>
+                                                <p>تم إيداع <span>SAR 50.000+ </span> </p>
+                                                <p>28-01-2025</p>
+                                            </li>
+                                        </ul>
+                                        <a href="" class="thm_btn v2">ايداع رصيد</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-twoelb" role="tabpanel" aria-labelledby="v-pills-twoelb-tab">
+                                    <div class="ticket__tab">
+                                        <h5>تذكرة الدعم</h5>
+                                        <div class="flex">
+                                            <p><i><img src="assets/img/all-icons/ticket-01.png" alt=""></i> تذاكري الماضية</p>
+                                            <a href=""><img src="assets/img/all-icons/arrow-left.png" alt=""></a>
+                                        </div>
+                                        <h5 class="mb-4">إرسال تذكرة جديدة</h5>
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="input__blk">
+                                                        <label for="">العنوان</label>
+                                                        <div class="input">
+                                                            <input type="text" placeholder="العنوان">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="input__blk">
+                                                        <label for="">الأولوية</label>
+                                                        <div class="input">
+                                                            <input type="text" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="input__blk">
+                                                        <label for="">الرسالة</label>
+                                                        <div class="input">
+                                                            <textarea name="" id="" placeholder="الرسالة"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="input__blk">
+                                                        <label for="">العنوان</label>
+                                                        <div class="input">
+                                                            <i><img src="assets/img/all-icons/file-upload.png" alt=""></i>
+                                                            <input type="text" placeholder="تحميل صور ، ملف ...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="">
+                                                        <a href="" class="thm_btn w-100">إرسال</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-therty" role="tabpanel" aria-labelledby="v-pills-therty-tab">...</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------ClientTab Section End ---------->
+
+
+
+    </main>
+
+    
+		<!-- JS here --> 
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="assets/js/nice-select2.js"></script> 
+        <script src="assets/js/aos.js"></script> 
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
+

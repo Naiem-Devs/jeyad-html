@@ -11,6 +11,9 @@
     .timer__blk ul li span {
         font-size: 40px;
     }
+    .signUp__content {
+        padding-left: 20px;
+    }
 }
 
 
@@ -33,6 +36,27 @@
     .menu-area nav ul li a {
         font-size: 14px;
     }
+    .signIn__img h1 {
+        font-size: 28px;
+    }
+    
+    .signIn__img p {
+        font-size: 16px;
+    }
+    
+    .signIn__content {
+        padding-left: 20px;
+    }
+    
+    .g__link {
+        padding: 11px;
+        font-size: 16px;
+    }
+    .signUp__content {
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+
 }
 
  
@@ -81,6 +105,17 @@
     }
     .wether__slider {
         margin-top: 50px;
+    }
+    .signIn__content {
+        padding-top: 70px;
+    }
+    .signUp__content {
+        padding: 50px;
+        height: auto;
+    }
+    
+    .signUp__content .thm_btn {
+        padding: 15px;
     }
 }
 
@@ -198,6 +233,51 @@ a.notifi-icon {
     
     .ChampShip-area {
         padding-bottom: 50px;
+    }
+    .signIn__content {
+        padding: 50px 30px;
+    }
+    
+    .g__link {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .input input {
+        height: 42px;
+        font-size: 14px;
+    }
+    
+    .signIn__content .thm_btn {
+        margin: 20px 0;
+    }
+    .or__line {
+        margin: 20px 0;
+    }
+    
+    .signIn__content h5 {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+    
+    .signIn__content p, .signUp__content p {
+        font-size: 14px;
+    }
+    .signUp__content {
+        padding: 50px 24px;
+        height: auto;
+    }
+
+.signUp__content h5 {
+    font-size: 14px;
+}
+    
+    .signUp__content .thm_btn {
+        padding: 15px;
+    }
+    .input__blk label {
+        font-size: 14px;
+        margin-bottom: 5px;
     }
 }
  
