@@ -56,7 +56,68 @@
         padding-left: 20px;
         padding-top: 50px;
     }
+    .gallery__blk.lg {
+        height: 600px;
+    }
+    
+    .gallery__blk {
+        height: 290px;
+        font-size: 14px;
+    }
+    
+    .gallery__blk h5 {
+        font-size: 16px;
+    }
+    
+    .gallery__blk p {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .gallery__blk h4 {
+        font-size: 18px;
+    }
+    
+    .gallery__blk h2 {
+        font-size: 24px;
+    }
+    .news__blk a {
+        font-size: 15px;
+    }
+    .Moments__blk h2 {
+        font-size: 24px;
+    }
+    
+    .MomentsThumSwiper p {
+        font-size: 14px;
+    }
+    
+    .MomentsThumSwiper .Moments__blk i {
+        height: 200px;
+    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer__nav a {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    .apps__btn a {
+        display: inline-block;
+        max-width: 135px;
+    }
 }
 
  
@@ -116,6 +177,101 @@
     
     .signUp__content .thm_btn {
         padding: 15px;
+    }
+
+    .gallery__blk.lg {
+        height: 600px;
+    }
+    
+    .gallery__blk {
+        height: 290px;
+        font-size: 14px;
+    }
+    
+    .gallery__blk h5 {
+        font-size: 16px;
+    }
+    
+    .gallery__blk p {
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .gallery__blk h4 {
+        font-size: 18px;
+    }
+    
+    .gallery__blk h2 {
+        font-size: 24px;
+    }
+    .news__blk a {
+        font-size: 14px;
+    }
+
+.news__blk i {
+    width: 100px;
+}
+    .Moments__blk h2 {
+        font-size: 24px;
+    }
+    
+    .MomentsThumSwiper p {
+        font-size: 14px;
+    }
+    
+    .MomentsThumSwiper .Moments__blk i {
+        height: 150px;
+    }
+    .Moments__blk {
+        height: 300px;
+    }
+    
+    .MomentsThumSwiper .Moments__blk a {
+        top: 77px;
+    }
+    
+    .blog__blk p {
+        font-size: 14px;
+    }
+    
+    .blog__blk i {
+        height: 220px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .newsLatter__blk {
+        text-align: center;
+    }
+    
+    .newsLatter__form {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .apps__btn {
+        margin: auto;
+        text-align: center;
+        float: none;
+        margin-top: 20px;
+    }
+    .footer__nav a {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    .apps__btn a {
+        display: inline-block;
+        max-width: 135px;
     }
 }
 
@@ -278,6 +434,153 @@ a.notifi-icon {
     .input__blk label {
         font-size: 14px;
         margin-bottom: 5px;
+    }
+
+
+
+
+    
+    .gallery__blk.lg {
+        height: 400px;
+        display: flex;
+    }
+
+.gallery__blk {
+    display: none;
+}
+    
+    .gallery__blk {
+        height: 290px;
+        font-size: 14px;
+    }
+    
+    .gallery__blk h5 {
+        font-size: 16px;
+    }
+    
+    .gallery__blk p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+.gallery__blk a {
+    width: 89px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+}
+    
+    .gallery__blk h4 {
+        font-size: 18px;
+    }
+    
+    .gallery__blk h2 {
+        font-size: 24px;
+    }
+    .news__blk a {
+        font-size: 14px;
+    }
+
+.news__blk i {
+    width: 100px;
+}
+    .Moments__blk h2 {
+        font-size: 20px;
+        right: 20px;
+        bottom: 20px;
+        padding-left: 20px;
+    }
+
+.Moments__blk a {
+    width: 50px;
+    height: 50px;
+    padding-left: 6px;
+}
+
+.Moments__blk a img {
+    max-width: 18px;
+}
+    
+    .MomentsThumSwiper p {
+        font-size: 12px;
+    }
+    
+    .MomentsThumSwiper .Moments__blk i {
+        height: 150px;
+    }
+    .Moments__blk {
+        height: 300px;
+    }
+    
+    .MomentsThumSwiper .Moments__blk a {
+        top: 77px;
+    }
+    
+    .blog__blk p {
+        font-size: 14px;
+    }
+    
+    .blog__blk i {
+        height: 220px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .newsLatter__blk {
+        text-align: center;
+    }
+    
+    .newsLatter__form {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .apps__btn {
+        margin: auto;
+        text-align: center;
+        float: none;
+        margin-top: 20px;
+    }
+    .footer__nav a {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    .apps__btn a {
+        display: inline-block;
+        max-width: 135px;
+    }
+    .footer__nav {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .footer__logo {
+        margin: 40px 0;
+        max-width: 100px;
+        margin-inline: auto;
+    }
+    
+    .copyRight {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .copyRight p {
+        margin: 0;
+    }
+    
+    .footer__btm {
+        flex-direction: column;
     }
 }
  

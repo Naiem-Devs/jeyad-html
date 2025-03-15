@@ -77,6 +77,109 @@
         },
       },
     });
+
+    var swiper = new Swiper(".newsSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        340: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 2,
+        },
+        1500: {
+          slidesPerView: 2,
+        },
+      },
+    });
+
+
+    var swiper = new Swiper(".MomentsThumSwiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      freeMode: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        340: {
+          slidesPerView: 2,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1500: {
+          slidesPerView: 3,
+        },
+      },
+    });
+
+
+
+    var swiper = new Swiper(".MomentsSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+    
+
+    var swiper = new Swiper(".blogSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        340: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 2,
+        },
+        1500: {
+          slidesPerView: 2,
+        },
+      },
+    });
+
+
   // page Animation
   // AOS.init({
   //   mirror: true,
