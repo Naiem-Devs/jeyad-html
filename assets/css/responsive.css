@@ -14,6 +14,31 @@
     .signUp__content {
         padding-left: 20px;
     }
+    .news__blk a {
+        font-size: 15px;
+    }
+    
+    .MomentsThumSwiper p {
+        font-size: 15px;
+    }
+    
+    .blog__blk h4 {
+        font-size: 20px;
+    }
+    
+    .blog__blk p {
+        font-size: 14px;
+    }
+    .ClientTab__content,.ltr .ClientTab__content {
+        margin: 0;
+    }
+    
+    .ClientTab__nav {
+        overflow: auto;
+    }
+    .horses__tab,.ltr .horses__tab {
+        padding: 0;
+    }
 }
 
 
@@ -28,6 +53,10 @@
         margin-left: 20px;
         font-size: 16px;
     }
+
+.ltr .chp__content {
+    margin-right: 20px;
+}
     .timer__blk ul li span {
         font-size: 40px;
     }
@@ -96,10 +125,40 @@
         height: 200px;
     }
 
-
-
-
-
+    .pepole__post .post__img>i {
+        height: 240px;
+        margin-left: 18px;
+    }
+    
+    .pepole__notifi .Alerts__tab ul li p {
+        font-size: 12px;
+    }
+    
+    .Alerts__tab ul li {
+        padding: 10px;
+        gap: 10px;
+    }
+    .news__box__wrp {
+        padding-left: 0;
+        gap: 6px;
+    }
+    .ClientTab__content,.ltr .ClientTab__content {
+        margin: 0;
+    }
+    
+    .ClientTab__nav {
+        overflow: auto;
+    }
+    .horses__tab,.ltr .horses__tab {
+        padding: 0;
+    }
+    .table__blk table {
+        min-width: 1000px;
+    }
+    
+    .table-wrp {
+        overflow: scroll;
+    }
 
 
 
@@ -138,6 +197,10 @@
         --f48 : 32px;
         --f65 : 40px;
     }
+    .mobile-menu{
+    height: calc(100vh - 70px);
+    top: 70px;
+}
     .thm_btn{
         padding: 8px 20px;
         font-size: 14px;
@@ -237,11 +300,47 @@
     .blog__blk i {
         height: 220px;
     }
+    .news__box__wrp {
+        flex-direction: column;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+    
+    i.news__box__border {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
 
+    .ClientTab__content,.ltr .ClientTab__content {
+        margin: 0;
+    }
+    
+    .ClientTab__nav {
+        overflow: auto;
+        height: calc(100vh - 70px);
+        top: 70px;
+    }
+    .horses__tab,.ltr .horses__tab {
+        padding: 0;
+    }
 
-
-
-
+.horses__tab a.thm_btn {
+    max-width: 300px;
+}
+    .table__blk table {
+        min-width: 1000px;
+    }
+    
+    .table-wrp {
+        overflow: scroll;
+    }
+    .reg__btns .v2{
+    padding: 12px 0;
+}
+.select__blk a{
+    left: -50px;
+}
 
 
 
@@ -309,6 +408,10 @@ a.notifi-icon {
     .header__right {
         gap: 0;
     }
+
+.ltr .header__right {
+    gap: 10px;
+}
     
     .header__right ul {
         gap: 2px;
@@ -336,6 +439,11 @@ a.notifi-icon {
         margin-left: 20px;
         font-size: 14px;
     }
+
+.ltr .chp__content {
+    margin-right: 0;
+    margin-left: 20px;
+}
     .timer__blk ul li span {
         font-size: 15px;
         min-width: 24px;
@@ -453,6 +561,10 @@ a.notifi-icon {
         height: 290px;
         font-size: 14px;
     }
+
+.gallery__box .gallery__blk {
+    display: flex;
+}
     
     .gallery__blk h5 {
         font-size: 16px;
@@ -522,21 +634,177 @@ a.notifi-icon {
     .blog__blk i {
         height: 220px;
     }
+    .news__box__wrp {
+        flex-direction: column;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+    
+    i.news__box__border {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .pepole__post .post__img>i{
+    height: 180px;
+    margin-left: 16px;
+}
 
+.post__img p {
+    font-size: 12px;
+}
+.post__blk {
+    padding-right: 30px;
+}
+.post__action a.thm_btn {height: 40px;}
 
+.post__action ul img {
+    max-width: 20px;
+}
+.news__box p {
+    font-size: 14px;
+}
+.ClientTab__content,.ltr .ClientTab__content {
+    margin: 0;
+}
 
+.ClientTab__nav {
+    overflow: auto;
+    height: calc(100vh - 50px);
+    top: 50px;
+    max-width: 250px;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    padding-right: 20px;
+    right: -300px;
+}
 
+.ltr .ClientTab__nav {right: auto;left: -300px;}
 
+.ClientTab__nav button.sideBtn {
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin-bottom: 15px !important;
+    margin-top: -6px !important;
+    display: block;
+}
 
+.ltr .ClientTab__nav button.sideBtn {
+    margin-left: auto !important;
+}
 
+button.sideBtn {
+    display: flex;
+}
 
+.ClientTab__nav.active {
+    right: 0;
+}
 
+.ltr .ClientTab__nav.active {
+    left: 0;
+    padding-left: 20px;
+}
+.horses__tab,.ltr .horses__tab {
+    padding: 0;
+    padding-bottom: 20px;
+}
+.table__blk table {
+    min-width: 1000px;
+}
+
+.table-wrp {
+    overflow: scroll;
+}
+
+.horses__tab a.thm_btn {
+    max-width: 300px;
+    margin: auto;
+    padding: 11px;
+    margin-bottom: 30px;
+}
+.Alerts__tab ul li p,.pepole__notifi .Alerts__tab ul li p {
+    font-size: 12px;
+}
+
+.Alerts__tab ul li {
+    gap: 10px;
+}
+
+.Alerts__tab ul li i {
+    width: 30px;
+    height: 30px;
+}
+
+.Alerts__tab ul li i img {
+    max-width: 18px;
+}
+.input textarea {
+    height: 120px;
+}
+
+.ticket__tab a.thm_btn {
+    padding: 14px;
+}
+
+.registration-area{
+    padding: 50px 0;
+}
+.input{
+    padding: 0 20px;
+}
+
+.input input {
+    font-size: 12px;
+}
+.select__blk .nice-select {
+    height: 44px;
+}
+
+.select__blk .nice-select span {
+    font-size: 14px;
+}
+.reg__img {
+    margin-bottom: 30px;
+}
+
+.reg__img h4 {
+    font-size: 18px;
+}
+.step__line ul li:before {
+    width: 122px;
+}
+
+.ltr .step__line ul li:before {
+    width: 140px;
+}
+.step__line ul p {
+    font-size: 12px;
+}
+.ltr .select__blk a{
+    top: 42px;
+    position: unset;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: -8px;
+    margin-left: auto;
+    width: max-content;
+}
 
 
 
     .newsLatter__blk {
         text-align: center;
     }
+
+.ltr .newsLatter__blk {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
     
     .newsLatter__form {
         justify-content: center;
@@ -568,7 +836,8 @@ a.notifi-icon {
         max-width: 100px;
         margin-inline: auto;
     }
-    
+
+ 
     .copyRight {
         flex-direction: column;
         align-items: center;
@@ -587,5 +856,7 @@ a.notifi-icon {
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
- 
+.step__line ul li:before{
+    width: 148px;
+}
 }

@@ -4,7 +4,17 @@
 //     event.preventDefault()
 //     $(this).toggleClass('active');   
 //     $('.mobile-menu').toggleClass('siteBar');   
-//   }); 
+//   });
+
+ var navbtn = document.querySelector(".siteBar-btn")
+ var mobileNav = document.querySelector(".mobile-menu")
+ var body = document.querySelector("body")
+
+ navbtn.addEventListener('click', () => {
+  navbtn.classList.toggle("active")
+  mobileNav.classList.toggle("siteBar")
+  body.classList.toggle("overflow-hidden")
+ })
 
   (function () {
     const second = 1000,
