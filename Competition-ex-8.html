@@ -149,23 +149,29 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                        <div class="input__blk">
-                                            <label for="">صورة الخيل </label>
-                                            <div class="input">
-                                                <i><img src="assets/img/all-icons/cloud-upload.png" alt=""></i>
-                                                <input type="text" placeholder="أدخل رقم التسجيل">
+                                    <div class="col-lg-6 mb-4">
+                                        <form method="post" action="" enctype="multipart/form-data">
+                                            <div class="input__file">
+                                                <h5>صورة الخيل</h5>
+                                                <div class="input">
+                                                    <i><img src="assets/img/all-icons/cloud-upload.png" alt=""></i>
+                                                    <label for="hiddenBtn" class="choose-btn" id="chooseBtn">أدخل رقم التسجيل</label>
+                                                </div>
+                                                <input type="file" id="hiddenBtn">
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="input__blk">
-                                            <label for="">شهادات الخيل  <span>*</span></label>
-                                            <div class="input">
-                                                <i><img src="assets/img/all-icons/cloud-upload.png" alt=""></i>
-                                                <input type="text" placeholder="أدخل رقم التسجيل">
+                                        <form method="post" action="" enctype="multipart/form-data">
+                                            <div class="input__file">
+                                                <h5>صورة الخيل</h5>
+                                                <div class="input">
+                                                    <i><img src="assets/img/all-icons/cloud-upload.png" alt=""></i>
+                                                    <label for="hiddenBtns" class="choose-btn" id="chooseBtns">أدخل رقم التسجيل</label>
+                                                </div>
+                                                <input type="file" id="hiddenBtns">
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -198,6 +204,32 @@ var options = {searchable: false};
 NiceSelect.bind(document.getElementById("select-1"), options);
 NiceSelect.bind(document.getElementById("select-2"), options);
 </script>
+
+<script>
+var hiddenBtn = document.getElementById('hiddenBtn');
+var chooseBtn = document.getElementById('chooseBtn');
+
+hiddenBtn.addEventListener('change', function() {
+    if (hiddenBtn.files.length > 0) {
+        chooseBtn.innerText = hiddenBtn.files[0].name;
+    } else {
+        chooseBtn.innerText = 'Choose';
+    }
+});
+</script>
+
+<script>
+    var hiddenBtns = document.getElementById('hiddenBtns');
+    var chooseBtns = document.getElementById('chooseBtns');
+    
+    hiddenBtns.addEventListener('change', function() {
+        if (hiddenBtns.files.length > 0) {
+            chooseBtns.innerText = hiddenBtns.files[0].name;
+        } else {
+            chooseBtns.innerText = 'Choose';
+        }
+    });
+    </script>
     </body>
 </html>
 

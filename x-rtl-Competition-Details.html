@@ -100,15 +100,14 @@
                 <div class="ChampShip__wrp">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="timer__blk">
-                                <div id="countdown">
-                                    <ul>
-                                      <li><span id="days"></span>ثانية</li>
-                                      <li><span id="hours"></span>ساعات</li>
-                                      <li><span id="minutes"></span>أيام</li>
-                                      <li><span id="seconds"></span>أسبوع</li>
-                                    </ul>
-                                </div>
+                            <div class="timer__blk" id="countdown">
+                                <ul id='tiles'></ul>
+                                <ul class="labels">
+                                  <li>ثانية</li>
+                                  <li>ساعات</li>
+                                  <li>أيام</li>
+                                  <li>أسبوع</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-12">
@@ -246,7 +245,41 @@
         <script src="assets/js/aos.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="assets/js/main.js"></script>
-
+        <script>
+            var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date
+            var days, hours, minutes, seconds; // variables for time units
+            
+            var countdown = document.getElementById("tiles"); // get tag element
+            
+            getCountdown();
+            
+            setInterval(function () { getCountdown(); }, 1000);
+            
+            function getCountdown(){
+            
+                // find the amount of "seconds" between now and target
+                var current_date = new Date().getTime();
+                var seconds_left = (target_date - current_date) / 1000;
+            
+                days = pad( parseInt(seconds_left / 86400) );
+                seconds_left = seconds_left % 86400;
+                     
+                hours = pad( parseInt(seconds_left / 3600) );
+                seconds_left = seconds_left % 3600;
+                      
+                minutes = pad( parseInt(seconds_left / 60) );
+                seconds = pad( parseInt( seconds_left % 60 ) );
+            
+                // format countdown string + set tag value
+                countdown.innerHTML = "<li>" + days + "</li><li>" + hours + "</li><li>" + minutes + "</li><li>" + seconds + "</li>"; 
+            }
+            
+            function pad(n) {
+                return (n < 10 ? '0' : '') + n;
+            }
+            
+            
+            </script>
     </body>
 </html>
 
