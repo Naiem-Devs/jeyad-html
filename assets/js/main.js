@@ -174,6 +174,14 @@
     });
 
 
+    var swiper = new Swiper(".wild-bg", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
   // page Animation
   // AOS.init({
   //   mirror: true,

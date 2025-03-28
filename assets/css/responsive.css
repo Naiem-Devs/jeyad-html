@@ -39,6 +39,58 @@
     .horses__tab,.ltr .horses__tab {
         padding: 0;
     }
+    .nav-area li a {
+        padding: 0;
+    }
+    
+    .nav-area li a i {
+        display: none;
+    }
+    
+    .nav-area li a.active {
+        padding: 0;
+        background: no-repeat;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+    }
+    
+    .nav-area ul {
+        gap: 20px;
+    }
+    
+    .header__login {
+        width: max-content;
+        margin-left: -10px;
+        gap: 10px;
+    }
+    .urgentNews__list .flex a {
+        font-size: 18px;
+    }
+    
+    .urgentNews__list .flex button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    
+    .urgentNews__list .flex button i {
+        width: 24px;
+    }
+    
+    .urgentNews__list ul li p {
+        font-size: 14px;
+    }
+    
+    .HorseBlog__blk a {
+        padding: 10px;
+    }
+    
+    .HorseBlog__blk i {
+        height: 80px;
+    }
+    
+    .post__list_blk a {
+        font-size: 16px;
+    }
 }
 
 
@@ -159,9 +211,74 @@
     .table-wrp {
         overflow: scroll;
     }
+    .nav-area li a {
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    .nav-area li a i {
+        display: none;
+    }
+    
+    .nav-area li a.active {
+        padding: 0;
+        background: no-repeat;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+    }
+    
+    .nav-area ul {
+        gap: 16px;
+    }
 
+.header__login a {
+    font-size: 14px;
+}
+    
+    .header__login {
+        width: max-content;
+        margin-left: -10px;
+        gap: 10px;
+    }
 
-
+.header__login i {
+    max-width: 60px;
+}
+    .urgentNews__list .flex a {
+        font-size: 18px;
+    }
+    
+    .urgentNews__list .flex button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    
+    .urgentNews__list .flex button i {
+        width: 24px;
+    }
+    
+    .urgentNews__list ul li p {
+        font-size: 14px;
+    }
+    
+    .HorseBlog__blk a {
+        padding: 10px;
+    }
+    
+    .HorseBlog__blk i {
+        height: 80px;
+    }
+    
+    .post__list_blk a {
+        font-size: 16px;
+    }
+    .HorseBlog__wrp ul {
+        flex-wrap: wrap;
+    }
+    
+    .HorseBlog__wrp ul li {
+        width: 23.7%;
+    }
 
 
 
@@ -350,8 +467,33 @@
     width: 50px;
 }
 
+.header__login i {
+    width: 70px;
+}
+.urgentNews__list .flex {
+    justify-content: center;
+}
 
+.wild-bg {
+    margin-top: 30px;
+}
 
+.HorseBlog__wrp ul {
+    flex-wrap: wrap;
+}
+
+.HorseBlog__wrp ul li {
+    width: 23.6%;
+}
+
+.HorseBlog__logo ul {
+    display: flex;
+    gap: 12px;
+}
+
+.HorseBlog__logo ul li {
+    margin: 0;
+}
 
     .newsLatter__blk {
         text-align: center;
@@ -376,6 +518,12 @@
     .apps__btn a {
         display: inline-block;
         max-width: 135px;
+    }
+    .HorseBlog__logo {
+        margin-top: 20px;
+    }
+    .post__video {
+        margin-top: 38px;
     }
 }
 
@@ -862,6 +1010,78 @@ button.sideBtn {
         width: 50px;
         line-height: 1.4;
     }
+    .HorseBlog__wrp ul {
+        flex-wrap: wrap;
+    }
+    
+    .HorseBlog__wrp ul li {
+        flex-basis: 48%;
+    }
+    
+    .urgentNews__list {
+        margin-bottom: 22px;
+    }
+    
+    .urgentNews__list .flex a {
+        font-size: 18px;
+    }
+    
+    .urgentNews__list .flex button i {
+        width: 24px;
+    }
+    
+    .urgentNews__list .flex {
+        justify-content: center;
+    }
+    
+    .Featured-posts {
+        margin-bottom: 20px;
+    }
+    
+    .HorseBlog__logo ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .HorseBlog__logo ul li {
+        width: 48%;
+        margin: 0;
+    }
+    
+    .post__list_blk i {
+        width: 120px;
+        height: 80px;
+    }
+    
+    .post__list_blk a {
+        font-size: 14px;
+    }
+    
+    .post__content {
+        margin-bottom: 24px;
+    }
+    
+    .post__video-wrp {
+        height: 250px;
+    }
+    .header__login i {
+        max-width: 70px;
+    }
+    
+    .header__login {
+        flex-direction: row-reverse;
+    }
+    
+    .header__login a {
+        font-size: 12px;
+    }
+    .header-area.solid{
+    border-radius: 0;
+}
+.header-icons{
+    margin-bottom: 20px;
+}
 }
  
 /* Large Mobile screen :480px. */

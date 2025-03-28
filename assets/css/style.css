@@ -1,9 +1,11 @@
 /*   Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
 /* ======font family=========
 font-family: "Almarai", sans-serif;
 font-family: "Inter", sans-serif;
 font-family: "Montserrat", sans-serif;
+font-family: "Jacques Francois", serif;
 */
 
 :root {
@@ -223,6 +225,15 @@ li {
     background: linear-gradient(0deg, #CFA56A, #CFA56A);
 }
 
+.header-area.solid {
+    background: #fff;
+    color: #000;
+    font-family: "Jacques Francois", serif;
+    box-shadow: 0px 4px 4px 0px #CFA56A4D;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
 .header__right {
     display: flex;
     gap: 12px;
@@ -309,11 +320,84 @@ a.notifi-icon span {
     gap: 24px;
 }
 
+
+.header-icons {}
+
+.header-icons ul li a {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.header-icons ul li a span {
+    position: absolute;
+    top: -5px;
+    width: 16px;
+    height: 16px;
+    background: red;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: 50%;
+    padding-bottom: 4px;
+    right: -5px;
+    font-size: 12px;
+}
+
+.header-icons ul {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-area ul {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.nav-area li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 13px;
+}
+
+.nav-area li a.active {
+    background: #CFA56A;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+
+.nav-area li a i {
+    flex-shrink: 0;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.header__login a {
+    box-shadow: 0px 0px 4px 0px #CFA56A4D;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 32px;
+    line-height: 1.4;
+}
+
 /* humbergar */
 .humbergar {
     cursor: pointer;
     display: block;
     max-width: 28px;
+}
+
+a.humbergar.siteBar-btn.black.active span {
 }
 
 .humbergar span,
@@ -328,6 +412,10 @@ a.notifi-icon span {
     display: block;
     content: '';
     transition: all 250ms ease-in-out;
+}
+
+.humbergar.black span, .humbergar.black span:before, .humbergar.black span:after {
+    background: #000;
 }
 
 .humbergar span:before {
@@ -369,6 +457,8 @@ a.notifi-icon span {
     padding-top: 50px;
     right: -400px;
 }
+
+.mobile-menu.v2 {height: calc(100vh - 70px);top: 70px;}
 
 .ltr .mobile-menu {
     right: auto;
@@ -1870,8 +1960,7 @@ i.news__box__border {
 }
 .swiper-wrapper {
 }
-.swiper-slide {
-}
+.swiper-slide {}
 .Moments__blk {height: 575px;border-radius: 1rem;overflow: hidden;position: relative;}
 
 
@@ -1977,6 +2066,7 @@ i.news__box__border {
 
 .ltr .pepole__post .post__user {
     margin-left: 0;
+    padding-left: 6px;
 }
 
 .pepole__post .post__opt {
@@ -2109,17 +2199,273 @@ input[type=file] {
 
 /*============ Area Start =============*/
 
+.urgentNews-area {padding-top: 40px;font-family: 'Jacques Francois';letter-spacing: 0;margin-bottom: 30px;}
+
+.urgentNews__social {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.urgentNews__social ul {}
+
+.urgentNews__social ul {
+    border: 1px solid #96979940;
+    width: max-content;
+    margin-left: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+}
+
+.urgentNews__social ul li a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    border-radius: 50%;
+}
+
+.urgentNews__social li {}
+.urgentNews__list {
+}
+
+.urgentNews__list ul {
+    box-shadow: 0px 0px 10px 0px #00000040;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.urgentNews__list h4 {
+    font-family: 'Jacques Francois';
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.urgentNews__list ul li {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding-left: 8px;
+}
+
+.urgentNews__list ul li i {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.urgentNews__list ul li p {
+    line-height: 1.3;
+}
+.flex {
+}
+
+.wild-bg .swiper-wrapper {}
+
+.wild-bg {
+    padding-bottom: 25px;
+}
+
+.wild-bg .swiper-pagination {
+    bottom: 0;
+}
+
+.wild-bg .swiper-pagination span.swiper-pagination-bullet {
+    margin: 0 2px;
+    border-radius: 0;
+    background: #E8E1E1;
+    opacity: 1;
+}
+
+.wild-bg span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #CFA56A;
+    width: 16px;
+}
+
+.wild-bg .swiper-slide i {display: block;min-height: 421px;height: 100%;}
+
+.wild-bg .swiper-slide i img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 460px;
+    border-radius: 10px;
+}
+.social__link {
+}
 /*============ Area End =============*/
 
 
-/*============ Area Start =============*/
+/*============HorseBlog Area Start =============*/
 
-/*============ Area End =============*/
+.HorseBlog-area {font-family: 'Jacques Francois';margin-bottom: 30px;}
+.HorseBlog__top {display: flex;align-items: center;justify-content: space-between;margin-bottom: 10px;}
+
+.HorseBlog__top h5 {
+    font-weight: 400;
+}
+
+.HorseBlog__top a {
+    border-bottom: 1px solid;
+    line-height: 1;
+}
+.HorseBlog__wrp {
+    margin-bottom: 20px;
+}
+
+.HorseBlog__wrp ul {
+    display: flex;
+    gap: 10px;
+}
+.HorseBlog__blk {padding: 10px;box-shadow: 0px 0px 8px 0px #00000040;border-radius: 10px;}
+
+.HorseBlog__blk a {
+    border-radius: 10px;
+    background: #CFA56A;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+    margin-top: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.HorseBlog__blk p {
+    margin-bottom: 5px;
+}
+
+.HorseBlog__blk i {
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.Featured-posts {
+}
+
+.Featured-posts h4 {
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 400;
+    position: relative;
+    width: max-content;
+    line-height: 1;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #CFA56A 0%, #FFE7C5 100%);
+    left: 0;
+    bottom: -6px;
+}
+.Featured-posts-slider {margin-top: 16px;}
+
+.Featured-posts-slider .post__blk {
+    padding-top: 10px;
+}
+.pepole__post {
+}
+.post__blk {
+}
+.post__user {
+}
+.post__img {
+}
+.post__opt {
+}
+.HorseBlog__logo {
+}
+
+.HorseBlog__logo h4 {}
+
+.HorseBlog__logo ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.HorseBlog__logo ul li:last-child {
+    margin-bottom: 0;
+}
+
+.HorseBlog__logo h4 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.HorseBlog__logo ul {
+    box-shadow: 0px 0px 4px 0px #00000040;
+    padding: 16px;
+    border-radius: 10px;
+}
+/*============HorseBlog Area End =============*/
 
 
-/*============ Area Start =============*/
+/*============post Area Start =============*/
+.post-area {font-family: 'Jacques Francois';margin-bottom: 50px;}
+.post__content {
+}
+.post__list {margin-top: 16px;}
 
-/*============ Area End =============*/
+.post__list_blk {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.post__list_blk span {
+    color: #424344;
+    font-size: 13px;
+}
+
+.post__list_blk a {
+    font-size: var(--f20);
+    display: block;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.post__list_blk i {
+    width: 180px;
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.post__list_blk i img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.post__video {
+}
+.post__video-wrp {position: relative;margin-top: 15px;height: 530px;overflow: hidden;border-radius: 20px;}
+
+.post__video-wrp > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post__video-wrp button,.post__video-wrp a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*============post Area End =============*/
 
 
 /*============ Area Start =============*/
@@ -2184,7 +2530,26 @@ input[type=file] {
     gap: 6px;
 }
 .apps__btn {width: max-content;display: block;margin-left: auto;float: left;}
-.flex {
+.urgentNews__list .flex {margin-bottom: 16px;display: flex;align-items: center;gap: 20px;}
+
+.urgentNews__list .flex button {
+    display: flex;
+    align-items: center;
+    background: #FF8880;
+    gap: 10px;
+    padding: 10px 30px;
+    line-height: 1;
+    box-shadow: 0px 0px 10px 0px #00000040;
+    border-radius: 24px;
+    color: #fff;
+    font-size: var(--f28);
+}
+
+.urgentNews__list .flex a {
+    font-size: var(--f24);
+    border-bottom: 1px solid;
+    line-height: 1;
+    display: inline-block;
 }
 
 .copyRight {display: flex;justify-content: space-between;margin: 20px 0;font-size: 14px;color: #424344;}
